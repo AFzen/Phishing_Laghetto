@@ -12,17 +12,24 @@
             color: #0f0;
             font-family: 'Courier New', Courier, monospace;
             overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
         .container {
             position: relative;
             z-index: 1;
             text-align: center;
-            margin-top: 100px;
             padding: 20px;
             border: 2px solid #0f0;
             border-radius: 10px;
             background-color: rgba(0, 0, 0, 0.8); /* Fundo semitransparente */
             animation: border-flicker 1.5s infinite alternate;
+            max-width: 90%;
+            width: 600px;
+            box-sizing: border-box;
         }
         @keyframes border-flicker {
             0% { border-color: #0f0; }
